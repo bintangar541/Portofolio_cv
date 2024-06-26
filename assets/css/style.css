@@ -205,6 +205,56 @@ body {
 .section-text { text-align: center; }
 
 
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .dark-mode-icon {
+  fill: #fff;
+}
+
+
+.dark-mode .navbar-list .navbar-link {
+  color: #fff;
+}
+
+.dark-mode .navbar-list .navbar-link:hover {
+  color: #ccc;
+}
+
+.dark-mode .btn {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode .btn:hover {
+  background-color: #777;
+}
+
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-icon {
+  width: 24px;
+  height: 24px;
+  fill: #000; /* Warna ikon dalam mode terang */
+}
+
+/* Animasi Dark Mode Toggle */
+.dark-mode-toggle {
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle.rotate {
+  transform: rotate(180deg);
+}
+
+
+/* Tambahkan gaya lainnya sesuai kebutuhan */
 
 
 
@@ -301,10 +351,20 @@ body {
   place-items: center;
 }
 
+.hero-banner {
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-
-.hero-banner img { border-radius: inherit; }
-
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit;
+}
 .hero-content {
   text-align: center;
   color: var(--white);
@@ -407,6 +467,52 @@ body {
 
 
 
+
+/*-----------------------------------*\
+  #SERTIFIKAT
+\*-----------------------------------*/
+
+
+/* CSS untuk bagian sertifikat */
+.sertifikat {
+  text-align: center;
+}
+
+.sertifikat-card:nth-child(2) {
+  margin-top: 10px; 
+}
+
+.sertifikat-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* .sertifikat-card {
+  flex: 0 0 calc(33.33% - 20px); 
+  max-width: calc(33.33% - 20px); 
+} */
+
+.sertifikat-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (min-width: 768px) {
+ 
+
+  .sertifikat-card {
+    background-size: 115%;
+    padding-inline: 80px; 
+  }
+
+  .sertifikat-card:hover,
+  .sertifikat-card:focus {
+    background-size: 130%; 
+  }
+}
 
 
 

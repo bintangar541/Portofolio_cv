@@ -30,6 +30,8 @@
     - #HEADER
   -->
 
+  
+
   <header class="header" data-header>
     <div class="container">
 
@@ -37,10 +39,14 @@
         <h1 class="logo">BAP</h1>
       </a>
 
+ 
+      
+
       <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
         <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
         <ion-icon name="close-outline" class="close-icon"></ion-icon>
-      </button>
+      </button> 
+      
 
       <nav class="navbar container">
         <ul class="navbar-list">
@@ -57,6 +63,11 @@
             <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
           </li>
 
+          
+          <li>
+            <a href="#certificate" class="navbar-link" data-nav-link>Certificate</a>
+          </li>
+
           <li>
             <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
           </li>
@@ -70,8 +81,32 @@
           </li>
 
           <li>
-            <a href="https://drive.google.com/file/d/1SZ8Oni00v_ZkATfi8yoipqKlsRBvEGfK/view?usp=sharing" class="btn btn-primary">Download CV</a>
+            <a href="https://drive.google.com/uc?export=download&id=1UQaWTRQzPQ1k0yHd2as1017_qrs1DkGx" class="btn btn-primary" download>Download CV</a>
           </li>
+
+          
+          <button class="dark-mode-toggle" aria-label="Toggle Dark Mode" onclick="toggleDarkMode()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dark-mode-icon">
+              <!-- Mode Terang (Siang) -->
+              <g class="light-mode">
+                <path fill="none" d="M0 0h24v24H0V0z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4 14H8c-.83 0-1.54-.5-1.84-1.22l-.07-.16c-.21-.45-.1-.99.26-1.35.36-.36.9-.47 1.35-.26l.16.07c.62.3 1.31.47 2.04.47 2.21 0 4-1.79 4-4 0-.73-.18-1.42-.47-2.04l-.07-.16c-.21-.45-.1-.99.26-1.35.36-.36.9-.47 1.35-.26l.16.07C18.5 8.46 19 9.17 19 10c0 1.1-.9 2-2 2zm-6 0h2v2h-2v-2z"/>
+              </g>
+              
+              <!-- Mode Gelap (Malam) -->
+              <g class="dark-mode" style="display: none;">
+                <path fill="none" d="M0 0h24v24H0V0z"/>
+                <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                <circle cx="12" cy="12" r="5" fill="#fff"/>
+              </g>
+            </svg>
+            
+          </button>
+          
+          
+          
+          
+          
 
         </ul>
       </nav>
@@ -95,7 +130,7 @@
 
           <div class="hero-banner">
 
-            <img src="./assets/images/tang.jpeg" width="800" height="864" loading="lazy" alt="Bintang Photo"
+            <img src="./assets/images/Bintang.jpg" width="800" height="864" loading="lazy" alt="Bintang Photo"
               class="img-cover">
 
 
@@ -135,7 +170,7 @@
 
           <figure class="about-banner">
 
-            <img src="./assets/images/Bintang.jpg" width="800" height="652" loading="lazy" alt="Bintang Photo"
+            <img src="./assets/images/b.jpeg" width="800" height="652" loading="lazy" alt="Bintang Photo"
               class="img-cover">
 
             <img src="./assets/images/bg1.jpeg" width="800" height="717" loading="lazy" alt="Bintang Photo"
@@ -230,6 +265,29 @@
       </section>
 
 
+      <!-- 
+    - #SERTIFIKAT
+  -->
+
+  <section class="section sertifikat" id="certificate">
+    <div class="container">
+      <p class="section-subtitle">Certificate</p>
+      <h2 class="h2 section-title">My Certificate</h2>
+      <div class="sertifikat-list">
+        <div class="sertifikat-card">
+          <img src="./assets/images/sertifikat/sertifikat2.png" alt="Sertifikat 2">
+        </div>
+        <div class="sertifikat-card">
+          <img src="./assets/images/sertifikat/sertifikat1.jpg" alt="Sertifikat 1">
+        </div>
+        <div class="sertifikat-card">
+          <img src="./assets/images/sertifikat/sertifikat3.jpg" alt="Sertifikat 2">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</section>
 
 
 
@@ -248,7 +306,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 80%">
-                <h3 class=" skills-title">CSS</h3>
+                <h3 class=" skills-title">HTML 5 & CSS</h3>
 
                 <data class="skills-data" value="80">80%</data>
               </div>
@@ -260,7 +318,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 60%">
-                <h3 class="skills-title">React</h3>
+                <h3 class="skills-title">ReactJS</h3>
 
                 <data class="skills-data" value="60">60%</data>
               </div>
@@ -272,9 +330,9 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">HTML</h3>
+                <h3 class="skills-title">Python</h3>
 
-                <data class="skills-data" value="80">80%</data>
+                <data class="skills-data" value="60">60%</data>
               </div>
 
               <div class="skills-progress-box">
@@ -284,7 +342,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 65%">
-                <h3 class="skills-title">JavaScript</h3>
+                <h3 class="skills-title">JavaScript Native</h3>
 
                 <data class="skills-data" value="65">65%</data>
               </div>
@@ -296,7 +354,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">PHP</h3>
+                <h3 class="skills-title">Laravel</h3>
 
                 <data class="skills-data" value="70">70%</data>
               </div>
@@ -494,7 +552,7 @@
     <div class="container">
 
       <p class="copyright">
-        &copy; 2023 <a href="#" class="copyright-link">Bintang Ardhian Pratama</a>. All Rights Reseverd
+        &copy; 2024 <a href="#" class="copyright-link">Bintang Ardhian Pratama</a>. All Rights Reseverd
       </p>
 
       <ul class="footer-list">
@@ -532,7 +590,17 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
+  
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    
+      const darkModeToggle = document.querySelector('.dark-mode-toggle');
+      darkModeToggle.classList.toggle('rotate');
+    }
+    
+  </script>
   <!-- 
     - ionicon link
   -->
